@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>navigation</title>
+</head>
+<body>
+<a style="margin-bottom: 20px; font-size: 25px" th:href="@{/coins}">show all coins</a>
+<form  style="margin-bottom: 20px; margin-top: 20px; font-size: 25px" th:method="POST" th:object="${coin}">
+    <label for="symbol_price">get price of coin:</label>
+    <input id="symbol_price" type="text" th:field="*{symbol}" placeholder="Enter symbol (ex: BTC)">
+    <input type="submit" value="Save">
+</form>
+<a style="margin-bottom: 20px; font-size: 25px" th:href="@{/registration}">registration</a>
+</body>
+</html>

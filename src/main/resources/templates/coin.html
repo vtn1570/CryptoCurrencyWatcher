@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div th:object="${coin}">
+    <h2>symbol</h2>
+    <h1 th:utext="${coin.getSymbol()}"></h1>
+    <h2>id</h2>
+    <h1 th:utext="${coin.getId()}"></h1>
+    <h2>price</h2>
+    <h1 th:utext="${coin.getPrice_usd()}"></h1>
+    </br>
+</div>
+
+<a th:href="@{/}">main menu</a>
+
+</body>
+</html>
